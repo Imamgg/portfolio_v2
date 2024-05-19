@@ -7,10 +7,27 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      keyframes: {
+        move: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        scaleup: {
+          "0%": { transform: "scale(0)" },
+          "100%": { transform: "scale(1)" },
+        }
+      },
+      animation: {
+        move: "move 10s linear infinite",
+        scaleup: "scaleup 1s ease-in-out",
+      },
+      colors: {
+        main: "#5438f3",
+        hover: "#0b48ea",
+      },
+      dropShadow: {
+        shadow: ["0 0 5px #fff", "0 0 10px #5438f3", "0 0 15px #5438f3"],
+        "shadow-lg": ["0 0 2px #9da6ff", "0 0 4px #7877ff"],
       },
     },
   },

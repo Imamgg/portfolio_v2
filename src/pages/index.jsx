@@ -40,7 +40,7 @@ export default function Home() {
               <FcReuse size={22} />
             </p>
           </div>
-          <div data-aos="fade-left" data-aos-duration="900">
+          <div data-aos="fade-up">
             <Image
               className="lg:hidden rounded-full w-[300px] drop-shadow-shadow"
               src={avatar}

@@ -2,7 +2,7 @@
 
 const Fieldform = () => {
   return (
-    <div className="lg:w-[50%] w-[90%] mr-44 z-50 flex flex-col justify-center lg:mt-0 mt-10 px-5 ">
+    <div className="lg:w-[50%] w-[90%] mr-44 flex flex-col justify-center lg:mt-0 mt-10 px-5">
       <h2
         data-aos="fade-right"
         data-aos-duration="900"

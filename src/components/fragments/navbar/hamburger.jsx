@@ -27,7 +27,7 @@ const Hamburger = () => {
   };
   
   return (
-    <div className="flex lg:absolute">
+    <div className="flex lg:absolute z-50">
       <div onClick={toggleMenu} className="block lg:hidden cursor-pointer">
         {isopen ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
       </div>

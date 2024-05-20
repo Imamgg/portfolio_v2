@@ -13,7 +13,7 @@ const TypeWritter = ({text, speed}) => {
       }, speed);
       return () => clearTimeout(timeout);
     }
-  }, [index, speed, text]);
+  }, [textState, index]);
 
   return (
     <span>
@@ -23,3 +23,4 @@ const TypeWritter = ({text, speed}) => {
 }
 
 export default TypeWritter;
+

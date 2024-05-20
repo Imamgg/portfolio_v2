@@ -32,7 +32,7 @@ const Menu = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [pathName]);
+  },[pathName]);
 
   return (
     <div className="hidden lg:flex lg:relative">

@@ -9,11 +9,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Home() {
+
   useEffect(() => {
     AOS.init();
   }, []);
 
-  const typed = ["Web Developer", "Fullstack Mobile", "Informatics Student"];
 
   return (
     <>
@@ -23,12 +23,12 @@ export default function Home() {
           < Waves />
           <div className="flex flex-col justify-start lg:justify-center lg:items-start items-center w-full lg:w-1/4 h-80 gap-2">
             <h3 data-aos="fade-down" className="text-xl font-semibold text-main">
-              Hello World, I'm
+              {`Hello World, I'm`}
             </h3>
             <h1 data-aos="fade-right" data-aos-duration="900" className="text-6xl font-bold">Imam Syafii</h1>
             <ReactTyped
               className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-white to-[#1323f2]"
-              strings={[...typed]}
+              strings={["Web Developer", "Fullstack Mobile", "Informatics Student"]}
               typeSpeed={150}
               loop
               backSpeed={20}

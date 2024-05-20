@@ -8,9 +8,9 @@ const Fieldform = () => {
         data-aos-duration="900"
         className="lg:text-2xl font-bold mb-4 text-sm"
       >
-        Have something to discuss? Send me a message and let's talk.
+        {`Have something to discuss? Send me a message and let's talk.`}
       </h2>
-      <form data-aos="fade-up" data-aos-duration="800" className="space-y-4" method="get">
+      <form data-aos="fade-up" data-aos-duration="900" className="space-y-4" method="get">
         <div>
           <label className="block text-white font-bold mb-2" htmlFor="name">
             Name
@@ -46,9 +46,9 @@ const Fieldform = () => {
         </div>
         <button
           type="submit"
-          className="w-[150px] lg:w-full p-3 bg-main hover:bg-indigo-950 rounded"
+          className="w-20 lg:w-full p-3 bg-main hover:bg-indigo-950 rounded"
         >
-          Send Message
+          Send
         </button>
       </form>
     </div>

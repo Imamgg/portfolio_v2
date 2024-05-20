@@ -10,14 +10,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import WavesContact from "@/components/elements/waves/wavescontact";
 import Fieldform from "@/components/fragments/form/fieldform";
+import Image from "next/image";
 
 const Contact = () => {
   const [selected, setSelected] = useState("instagram");
   const profiles = {
-    instagram: ig.src,
-    github: github.src,
-    twitter: x.src,
-    tiktok: tiktok.src,
+    instagram: ig,
+    github: github,
+    twitter: x,
+    tiktok: tiktok,
   };
 
   const icons = {
@@ -35,7 +36,10 @@ const Contact = () => {
     <>
       <Nav />
       <div className="h-screen w-full text-white relative mt-4">
-        <h2 data-aos="fade-up" className="text-4xl lg:pl-40 pl-5 font-bold mb-3">
+        <h2
+          data-aos="fade-up"
+          className="text-4xl lg:pl-40 pl-5 font-bold mb-3"
+        >
           Contact Me
         </h2>
         <div className="flex justify-between w-[90%] flex-col lg:flex-row">
@@ -65,12 +69,12 @@ const Contact = () => {
                 </div>
               ))}
             </div>
-            <img
+            <Image
               data-aos="fade-right"
               data-aos-duration="900"
-              src={profiles[selected]}
-              alt="Profile"
               className="lg:h-[500px] h-[400px] w-[270px] rounded-xl lg:-ml-36 -ml-6"
+              src={profiles[selected]}
+              alt="profile"
             />
           </div>
           <Fieldform />

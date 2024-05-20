@@ -42,13 +42,13 @@ export default function Home() {
           </div>
           <div data-aos="fade-up">
             <Image
-              className="lg:hidden rounded-full w-[300px] drop-shadow-shadow"
+              className="rounded-full lg:w-[400px] w-[320px] drop-shadow-shadow"
               src={avatar}
               width={400}
               height={450}
               alt="Profile"
             />
-            <Image
+            {/* <Image
               className="hidden relative rounded-full lg:flex flex-col -z-10 drop-shadow-shadow"
               src={avatar}
               layout="responsive"
@@ -56,7 +56,7 @@ export default function Home() {
               width={100}
               height={100}
               alt="Profile"
-            />
+            /> */}
           </div>
         </div>
       </div>

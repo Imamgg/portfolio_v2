@@ -7,27 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
-      keyframes: {
-        move: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-50%)" },
-        },
-        scaleup: {
-          "0%": { transform: "scale(0)" },
-          "100%": { transform: "scale(1)" },
-        }
-      },
-      animation: {
-        move: "move 10s linear infinite",
-        scaleup: "scaleup 1s ease-in-out",
-      },
       colors: {
-        main: "#5438f3",
-        hover: "#0b48ea",
+        "purple": {
+          50: "#edefff",
+          100: "#dde3ff",
+          200: "#c2c9ff",
+          300: "#9da6ff",
+          400: "#7877ff",
+          500: "#6256fe",
+          600: "#5438f3",
+          700: "#482bd7",
+          800: "#3b26ad",
+          900: "#332788",
+          950: "#1f174f",
+        },
       },
       dropShadow: {
-        shadow: ["0 0 5px #fff", "0 0 10px #5438f3", "0 0 15px #5438f3"],
-        "shadow-lg": ["0 0 2px #9da6ff", "0 0 4px #7877ff"],
+        shadow: ["0 0 5px #fff", "0 0 10px #5438f3", "0 0 15px #5438f3"]
       },
     },
   },

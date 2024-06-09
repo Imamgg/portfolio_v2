@@ -32,27 +32,27 @@ const Menu = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  },[pathName]);
+  }, [pathName]);
 
   return (
-    <div className="hidden lg:flex lg:relative">
-      <ul className="flex justify-evenly gap-5 font-semibold text-base text-slate-400">
+    <div className="relative w-64">
+      <ul className="flex justify-between items-center font-semibold text-base text-slate-400">
         <li className={pathName === "/" ? "text-white" : ""}>
           <Link href="/">Home</Link>
         </li>
         <li className={pathName === "/about" ? "text-white" : ""}>
           <Link href="/about">About</Link>
         </li>
-        {/* <li className={pathName === "/portfolio" ? "text-white" : ""}>
+        <li className={pathName === "/portfolio" ? "text-white" : ""}>
           <Link href="/portfolio">Portfolio</Link>
-        </li> */}
+        </li>
         <li className={pathName === "/contact" ? "text-white" : ""}>
           <Link href="/contact">Contact</Link>
         </li>
       </ul>
       <span
         ref={indicatorRef}
-        className="absolute bottom-0 h-1 bg-main"
+        className="absolute bottom-0 h-1 bg-purple-500"
       />
     </div>
   );

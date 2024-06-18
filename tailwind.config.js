@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        polygon: "url('/image/polygon-scatter-haikei.svg')",
+        circle: "url('/image/circle-scatter-haikei.svg')",
+      },
       colors: {
         "purple": {
           50: "#edefff",
@@ -21,11 +25,14 @@ module.exports = {
           900: "#332788",
           950: "#1f174f",
         },
+        "custom": {
+          light: "#D1FAE5",
+        },
       },
       dropShadow: {
-        shadow: ["0 0 5px #fff", "0 0 10px #5438f3", "0 0 15px #5438f3"]
+        shadow: ["0 0 5px #fff", "0 0 10px #5438f3", "0 0 15px #5438f3"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };

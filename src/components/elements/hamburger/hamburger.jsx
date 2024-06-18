@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Link from "next/link";
+import { Divide as Hamburger } from "hamburger-react";
 
-const Hamburger = () => {
+const HamburgerMenu = () => {
   const navItems = [
     {
       name: "Home",
@@ -11,43 +12,41 @@ const Hamburger = () => {
       name: "About",
       path: "/about",
     },
-    // {
-    //   name: "Portfolio",
-    //   path: "/portfolio",
-    // },
+    {
+      name: "Portfolio",
+      path: "/portfolio",
+    },
     {
       name: "Contact",
       path: "/contact",
     },
   ];
 
-  const [isopen, setIsopen] = useState(false);
-  const toggleMenu = () => {
-    setIsopen(!isopen);
-  };
-  
-  return (
-    <div className="flex lg:absolute z-50">
-      <div onClick={toggleMenu} className="block lg:hidden cursor-pointer">
-        {isopen ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
-      </div>
+  const [isOpen, setIsOpen] = useState(false);
 
-      <ul
-        className={
-          isopen
-            ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
-            : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
-        }
+  return (
+    <div className="flex z-50 md:hidden text-white">
+      <Hamburger toggled={isOpen} toggle={setIsOpen} />
+      <div
+        className={`fixed left-0 top-0 w-[70%] h-full border-r border-r-gray-800 bg-gradient-to-b from-black to-gray-900 transition-transform ease-in-out duration-500 ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
       >
-        <h1 className="w-full text-3xl font-bold text-main m-4">Imamgg.</h1>
-        {navItems.map((item, index) => (
-          <li key={index} className="text-white text-xl m-4">
-            <a href={item.path}>{item.name}</a>
-          </li>
-        ))}
-      </ul>
+        <h1 className="text-4xl font-extrabold text-purple-500 m-6">Imamgg;</h1>
+        <nav className="mt-10">
+          {navItems.map((item, index) => (
+            <ul key={index} className="text-lg font-medium mx-6 my-4">
+              <li className="hover:text-purple-500 transition-colors duration-200">
+                <Link href={item.path} className="flex py-2 px-4 rounded-lg hover:bg-gray-800 transition-colors duration-300">
+                    {item.name}
+                </Link>
+              </li>
+            </ul>
+          ))}
+        </nav>
+      </div>
     </div>
   );
 };
 
-export default Hamburger;
+export default HamburgerMenu;

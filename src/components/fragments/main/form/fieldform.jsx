@@ -1,9 +1,9 @@
 const Fieldform = () => {
   return (
-    <div className="w-5/12 flex justify-center items-center">
+    <div className="p-[50px_20px]">
       <form>
         <h1 className="text-xl text-white font-semibold mb-3">{`Have something to discuss? Send me a message and let's talk.`}</h1>
-        <div className="relative z-0 w-full mb-5 group">
+        <div className="relative w-full mb-5 group">
           <input
             type="text"
             name="name"
@@ -18,7 +18,7 @@ const Fieldform = () => {
             Your name
           </label>
         </div>
-        <div className="relative z-0 w-full mb-5 group">
+        <div className="relative w-full mb-5 group">
           <input
             type="alamat"
             name="alamat"
@@ -33,7 +33,7 @@ const Fieldform = () => {
             From
           </label>
         </div>
-        <div className="relative z-0 w-full mb-5 group">
+        <div className="relative w-full mb-5 group">
           <textarea
             name="pesan"
             id="fpesan"
@@ -49,7 +49,7 @@ const Fieldform = () => {
         </div>
         <button
           type="submit"
-          className="text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg w-full"
+          className="text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg"
         >
           Send
         </button>

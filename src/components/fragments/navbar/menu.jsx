@@ -36,7 +36,7 @@ const Menu = () => {
 
   return (
     <div className="relative w-64">
-      <ul className="flex justify-between items-center font-semibold text-base text-slate-400">
+      <ul className="md:flex hidden justify-between items-center font-semibold text-base text-slate-400">
         <li className={pathName === "/" ? "text-white" : ""}>
           <Link href="/">Home</Link>
         </li>

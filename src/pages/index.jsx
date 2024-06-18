@@ -23,11 +23,9 @@ export default function Home() {
       <Nav />
       <div className="max-w-7xl mx-auto flex flex-col">
         <Waves />
-        <div className="flex justify-evenly items-center h-screen">
-          <div className="flex flex-col gap-2 font-semibold">
-            <h3 className="text-xl text-purple-600">
-              {`Hello World, I'm`}
-            </h3>
+        <div className="flex justify-evenly items-center md:flex-row flex-col-reverse h-screen md:mt-0 mt-8">
+          <div className="flex flex-col gap-2 font-semibold md:text-left text-center">
+            <h3 className="text-xl text-purple-600">{`Hello World, I'm`}</h3>
             <h1 className="text-6xl font-bold text-white">Imam Syafii</h1>
             <ReactTyped
               className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-white to-[#1323f2]"
@@ -45,8 +43,8 @@ export default function Home() {
           </div>
           <div>
             <Image
-              className="rounded-full drop-shadow-shadow min-w-[200px]"
-              src="/image/yoru.jpg"
+              className="rounded-full drop-shadow-shadow md:max-w-[400px] max-w-[300px]"
+              src="/image/profil.jpg"
               width={400}
               height={100}
               alt="Profile"

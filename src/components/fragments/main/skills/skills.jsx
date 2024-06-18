@@ -5,46 +5,46 @@ const Skills = () => {
   const skills = [
     {
       name: "HTML",
-      icon: "/Image/html.png",
+      icon: "/image/html.png",
     },
     {
       name: "CSS",
-      icon: "/Image/css.png",
+      icon: "/image/css.png",
     },
     {
       name: "JavaScript",
-      icon: "/Image/javascript.png",
+      icon: "/image/javascript.png",
     },
     {
       name: "Python",
-      icon: "/Image/python.png",
+      icon: "/image/python.png",
     },
     {
       name: "Next.js",
-      icon: "/Image/nextjs.png",
+      icon: "/image/nextjs.png",
     },
     {
       name: "Tailwind CSS",
-      icon: "/Image/tailwind.png",
+      icon: "/image/tailwind.png",
     }
   ];
 
   const tools = [
     {
       name: "npm",
-      icon: "/Image/npm.png",
+      icon: "/image/npm.png",
     },
     {
       name: "GitHub",
-      icon: "/Image/github.png",
+      icon: "/image/github.png",
     },
     {
       name: "Git",
-      icon: "/Image/git.png",
+      icon: "/image/git.png",
     },
     {
       name: "Vscode",
-      icon: "/Image/vscode.png",
+      icon: "/image/vscode.png",
     }
   ];
 
